@@ -1,0 +1,1 @@
+const imageUrl = p.fotoproduk.fields.file.url

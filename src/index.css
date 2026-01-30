@@ -1,0 +1,70 @@
+:root{
+  --brown-dark: #531E09;
+  --brown: #8B5E3C;
+  --brown-light: #C69C6D;
+  --cream: #F4E7D3;
+  --accent: #7A4B2B;
+  --max-width: 1100px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--brown-dark);
+  background:linear-gradient(180deg,var(--cream),#fff);
+}
+.app{display:flex;flex-direction:column;align-items:stretch}
+main{max-width:var(--max-width);margin:2rem auto;padding:0 1rem;width:100%}
+.section{padding:3rem 0}
+.container{max-width:900px;margin:0 auto}
+.btn{background:var(--brown);color:#fff;padding:0.75rem 1.25rem;border-radius:8px;border:none;cursor:pointer;font-weight:600;text-decoration: none;}
+.btn.secondary{background:transparent;color:var(--brown);border:2px solid var(--brown)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:#fff;padding:1rem;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.06)}
+.hero{background:linear-gradient(90deg,var(--brown-light),var(--brown));color:#fff;padding:4rem 1rem}
+.hero h1{margin:0 0 1rem;font-size:2rem}
+.small{font-size:0.9rem;color:#4b3428}
+.footer{padding:2rem 1rem;text-align:center;color:#6b4b37}
+@media(min-width:768px){.hero h1{font-size:2.6rem}}
+
+/* Modal styles */
+.modal-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:1000;
+  padding:1rem;
+}
+.modal{
+  background:#fff;
+  max-width:720px;
+  width:100%;
+  border-radius:10px;
+  padding:1.25rem;
+  position:relative;
+  box-shadow:0 8px 30px rgba(0,0,0,0.2);
+  color:var(--brown-dark);
+}
+.modal-close{
+  position:absolute;
+  top:8px;
+  right:8px;
+  border:none;
+  background:transparent;
+  font-size:1.25rem;
+  cursor:pointer;
+  color:var(--brown-dark);
+}
+.modal img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height:360px;
+  object-fit:cover;
+  width:auto;
+  border-radius:8px;
+  margin-bottom:12px
+}
