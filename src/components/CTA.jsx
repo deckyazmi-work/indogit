@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function CTA(){
-  const waNumber = '6287778086123'
+  const waNumber = '628777808'
   const message = encodeURIComponent('Halo Indogit, saya ingin konsultasi sebelum membeli.')
   return (
     <section className="section" style={{background:'linear-gradient(90deg,var(--cream),#fff)'}}>
