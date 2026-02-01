@@ -5,7 +5,7 @@ export default function Footer(){
     <footer className="footer">
       <div className="container">
         <p>© {new Date().getFullYear()} Indogit • Gitar Luthier Lokal</p>
-        <p className="small">Kontak: <a href="https://wa.me/6287778086123">WhatsApp</a> • Built with ❤️</p>
+        <p className="small">Kontak: <a href="https://wa.me/628777808">WhatsApp</a> • Built with ❤️</p>
       </div>
     </footer>
   )
