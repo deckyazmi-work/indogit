@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Hero(){
-  const waNumber = '6287778086123'
+  const waNumber = '628777808'
   const prefill = encodeURIComponent('Halo Indogit, saya tertarik membeli gitar. Bisa bantu?')
   return (
     <header className="hero section">
