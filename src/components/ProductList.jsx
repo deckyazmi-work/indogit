@@ -34,7 +34,7 @@ export default function ProductList(){
   if(loading) return <section className="section"><div className="container">Memuat produk...</div></section>
   if(error) return <section className="section"><div className="container">{error}</div></section>
 
-  const waNumber = '6287778086123'
+  const waNumber = '628777808'
 
   function closeModal(){ setSelectedProduct(null) }
 
